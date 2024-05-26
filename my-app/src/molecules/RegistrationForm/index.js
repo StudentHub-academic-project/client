@@ -103,9 +103,9 @@ function RegistrationForm() {
                 </div>
                 <div className='AccExistDiv'>
                     <Typography fontWeight='body3' fontSize='title2'>Already have an account?</Typography>
-                    {/*<Link to="/logIn" className="LogInLink">*/}
-                    {/*    <Typography fontWeight='body4' fontSize='title2'>Sign in</Typography>*/}
-                    {/*</Link>*/}
+                    <Link to="/logIn" className="LogInLink">
+                        <Typography fontWeight='body4' fontSize='title2'>Sign in</Typography>
+                    </Link>
                 </div>
             </form>
         </div>

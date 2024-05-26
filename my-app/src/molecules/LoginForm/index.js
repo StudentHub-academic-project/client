@@ -84,9 +84,9 @@ function LoginForm() {
                 </div>
                 <div className='AccExistDiv'>
                     <Typography fontWeight='body3' fontSize='title2'>Don't have an account?</Typography>
-                    {/*<Link to="/registration" className="LogInLink">*/}
+                    <Link to="/registration" className="LogInLink">
                         <Typography fontWeight='body4' fontSize='title2'>Sign up</Typography>
-                    {/*</Link>*/}
+                    </Link>
                 </div>
             </form>
         </div>

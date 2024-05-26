@@ -1,12 +1,12 @@
 import './App.css';
-import RegistrationPage from "./pages/RegistrationPage";
-import LoginForm from "./molecules/LoginForm";
+import AppRoutes from "./routes";
 
 function App() {
   return (
     <div className="App">
-      {/*<RegistrationPage />*/}
-        <LoginForm />
+      {/*/!*<RegistrationPage />*!/*/}
+      {/*  <LogInPage />*/}
+        <AppRoutes />
     </div>
   );
 }
