@@ -1,0 +1,66 @@
+.home-page {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    .logo {
+      width: 50px;
+      height: 50px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      margin-right: 20px;
+      cursor: pointer;
+  }
+    .project-title {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    .auth-buttons {
+      display: flex;
+      gap: 10px;
+
+      .login-btn, .register-btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .posts-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+
+    .post-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      .post-item {
+        padding: 20px;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        background-color: #ffffff;
+      }
+    }
+
+    .manage-posts-btn {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      align-self: center;
+    }
+  }
+}
