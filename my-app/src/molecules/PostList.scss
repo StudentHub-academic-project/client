@@ -1,0 +1,22 @@
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  
+    .post-item {
+      padding: 20px;
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+      background-color: #ffffff;
+  
+      h2 {
+        margin-bottom: 10px;
+      }
+  
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
