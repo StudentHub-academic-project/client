@@ -36,7 +36,7 @@ function RegistrationForm() {
             return;
         }
 
-        axios.post('http://HOST:PORT/auth/signup', formData).then((response) => {
+        axios.post('http://localhost:9110/auth/signup', formData).then((response) => {
             if (response.status === 201) {
                 localStorage.setItem('token', response.data.token);
                 setResponse({
