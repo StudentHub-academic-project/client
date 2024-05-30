@@ -1,0 +1,12 @@
+@import '../../colors';
+
+.RegistrationPageDiv{
+  background-color: $lightGrey;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow-y: hidden;
+}
