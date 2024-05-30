@@ -9,9 +9,8 @@ import axios from 'axios';
 import InputLabel from "../../atoms/FormInputLabel";
 
 const initialFormData = {
-    username: '',
+    email: '',
     password: '',
-    deviceType:'WEB'
 };
 function LoginForm() {
     const [formData, setFormData] = useState(initialFormData);
@@ -42,7 +41,7 @@ function LoginForm() {
         })
             .catch((error) => {
                 setResponse(null);
-                setError('Invalid username or password. Please try again.');
+                setError('Invalid email or password. Please try again.');
             });
         setFormData(initialFormData);
     }, [formData, navig])
@@ -57,14 +56,13 @@ function LoginForm() {
                     </div>
                 </div>
                 <div className='InputBlock'>
-                    <InputLabel title='Username'/>
+                    <InputLabel title='Email'/>
                     <input
                         type="text"
-                        placeholder="Enter username"
-                        name="username"
-                        value={formData.username}
+                        placeholder="Enter email"
+                        name="email"
+                        value={formData.email}
                         onChange={handleChange}
-                        autoComplete="current-username"
                     />
                 </div>
                 <div className='InputBlock'>

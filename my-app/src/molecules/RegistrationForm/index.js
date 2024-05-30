@@ -9,7 +9,9 @@ import InputLabel from "../../atoms/FormInputLabel";
 
 const initialFormData = {
     username: '',
+    email: '',
     password: '',
+    password_repeat: '',
     fullname: '',
 };
 
@@ -85,12 +87,32 @@ function RegistrationForm() {
                         />
                     </div>
                     <div className='InputBlock'>
+                        <InputLabel title='Email'/>
+                        <input
+                            type="text"
+                            placeholder="Enter email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    <div className='InputBlock'>
                         <InputLabel title='Password'/>
                         <input
                             type="password"
                             placeholder="Enter password"
                             name="password"
                             value={formData.password}
+                            onChange={handleChange}
+                        />
+                    </div>
+                    <div className='InputBlock'>
+                        <InputLabel title='Repeat Password'/>
+                        <input
+                            type="password"
+                            placeholder="Repeat password"
+                            name="password_repeat"
+                            value={formData.password_repeat}
                             onChange={handleChange}
                         />
                     </div>
